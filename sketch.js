@@ -174,7 +174,7 @@ if(gameState==="lost"){
 if(zombieGroup.isTouching(bulletsGroup)){
   for(var i=0;i<zombieGroup.length;i++){
     if(zombieGroup[i].isTouching(bulletsGroup)){
-      gunShot.stop();
+      gunShot.play();
       zombieGroup[i].destroy();
       bullets.destroy();
 
